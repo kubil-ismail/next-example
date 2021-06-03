@@ -29,7 +29,7 @@ class Supervisor extends React.Component {
         <Layout style={{ minHeight: "100vh" }}>
           <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
             <div className="logo" />
-            {!router.isReady ? (
+            {router.isReady ? (
               <>
                 <Menu
                   theme="dark"
